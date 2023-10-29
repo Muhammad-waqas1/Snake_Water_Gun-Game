@@ -1,6 +1,6 @@
-# Snake_Water_Gun-Game
-You can run your code using 2 methods:
-    1)Using If_Else
+**# Snake_Water_Gun-Game**
+You can run your code using 2 methods:<br>
+    1)Using If_Else<br>
     2)Using Mathematical Operations
 ```
 import pyttsx3
