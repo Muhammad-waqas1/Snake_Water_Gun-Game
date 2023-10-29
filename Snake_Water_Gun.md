@@ -1,5 +1,8 @@
 # Snake_Water_Gun-Game
-
+You can run your code using 2 methods:
+    1)Using If_Else
+    2)Using Mathematical Operations
+```
 import pyttsx3
 
 # Include Vocals:
@@ -32,10 +35,11 @@ def vocals(greet):
         friend.say(f"Invalid Input!")
     friend.runAndWait()
     friend.stop()
-
+```
 
 
 # Using If_Else :
+```
 def using_if():
     user=input("\nEnter 'S' for Snake, 'W' for Water OR 'G' for Gun: ")
     import random as rd
@@ -64,6 +68,7 @@ def using_if():
             print(f"Computer was {comp_1}".center(-80))
             print("You Loss".center(-80))
             vocals(1)
+
     # For Water
 
     elif(user == "W"):
@@ -104,8 +109,9 @@ def using_if():
         # S:  D W L
         # W:  L D W
         # G:  W L D
-
-# Using Mathematical Operations
+```
+# Using Mathematical Operations:
+```
 def using_math():
     user_math=int(input("\nEnter '0' for Snake,'1' for Water or '2' for Gun: "))
     if(user_math != 0) and (user_math != 1) and (user_math != 2):
@@ -171,3 +177,4 @@ elif(option==1):
 else:
     print("Wrong Input!")
     vocals(4)
+```
