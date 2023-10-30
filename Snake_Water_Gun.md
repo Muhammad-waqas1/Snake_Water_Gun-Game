@@ -5,28 +5,19 @@ You can run your code using 2 methods:<br>
 ```
 import pyttsx3
 
-# Include Vocals:
 def vocals(greet):
     friend=pyttsx3.init()
     voices=friend.getProperty('voices')
     friend.setProperty('voice',voices[0].id)
     if(greet==0):
         friend.say(f"You     Win.")
-        f=open("icon.png","rb")
-        f.write
-        f.close()
+        
     elif(greet==1):
         friend.say(f"You     lose.")
-        # friend.say(f"You     Win.")
-        f=open("icon.png","rb")
-        f.write
-        f.close()
+        
     elif(greet==2):
         friend.say(f"Tie.")
-        # friend.say(f"You     Win.")
-        f=open("icon.png","rb")
-        f.write
-        f.close()
+        
     elif(greet==3):
         friend.say(f"Please Enter in Upper Case letters.")
     elif(greet==4):
@@ -46,13 +37,9 @@ def using_if():
 
 
     collect=['S','W','G']
-    comp=str(rd.choices(collect))       # print list
-    comp_1=str(rd.choice(collect))      # print string
+    comp=str(rd.choices(collect))       
+    comp_1=str(rd.choice(collect))      
     user_1=list(user)
-    # print(user)
-    # print(comp)
-    # print(comp_1)
-
     # For Snake
 
     if(user == "S"):
@@ -68,7 +55,6 @@ def using_if():
             print(f"Computer was {comp_1}".center(-80))
             print("You Loss".center(-80))
             vocals(1)
-
     # For Water
 
     elif(user == "W"):
@@ -123,9 +109,7 @@ def using_math():
     collect_math=[0,1,2]
     comp_math=int(rd.choice(collect_math))
 
-    # print(comp_math)
-    # print(type(comp_math))
-    # print(type(user_math))
+    
     if(user_math == 0):  # Snake
         cont_1=cont[0]
         if(comp_math==0):
@@ -177,4 +161,3 @@ elif(option==1):
 else:
     print("Wrong Input!")
     vocals(4)
-```
